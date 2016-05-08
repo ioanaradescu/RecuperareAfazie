@@ -55,46 +55,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data Access Layer\Configurations\IntrebareConfiguration.cs" />
-    <Compile Include="Data Access Layer\Configurations\PacientConfiguration.cs" />
-    <Compile Include="Data Access Layer\Configurations\RaspunsConfiguration.cs" />
-    <Compile Include="Data Access Layer\Configurations\RezultatConfiguration.cs" />
-    <Compile Include="Data Access Layer\Configurations\TestConfiguration.cs" />
-    <Compile Include="Data Access Layer\RecuperareAfazieContext.cs" />
-    <Compile Include="TestAles5.cs">
+    <Compile Include="DAL\Configurations\IntrebareConfiguration.cs" />
+    <Compile Include="DAL\Configurations\PacientConfiguration.cs" />
+    <Compile Include="DAL\Configurations\RaspunsConfiguration.cs" />
+    <Compile Include="DAL\Configurations\RezultatConfiguration.cs" />
+    <Compile Include="DAL\Configurations\TestConfiguration.cs" />
+    <Compile Include="DAL\RecuperareAfazieContext.cs" />
+    <Compile Include="UI\TestAles5.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TestAles5.Designer.cs">
+    <Compile Include="UI\TestAles5.Designer.cs">
       <DependentUpon>TestAles5.cs</DependentUpon>
     </Compile>
-    <Compile Include="GenereazaTest2.cs">
+    <Compile Include="UI\GenereazaTest2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GenereazaTest2.Designer.cs">
+    <Compile Include="UI\GenereazaTest2.Designer.cs">
       <DependentUpon>GenereazaTest2.cs</DependentUpon>
     </Compile>
-    <Compile Include="GenereazaTest3.cs">
+    <Compile Include="UI\GenereazaTest3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GenereazaTest3.Designer.cs">
+    <Compile Include="UI\GenereazaTest3.Designer.cs">
       <DependentUpon>GenereazaTest3.cs</DependentUpon>
     </Compile>
-    <Compile Include="GenereazaTest4.cs">
+    <Compile Include="UI\GenereazaTest4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GenereazaTest4.Designer.cs">
+    <Compile Include="UI\GenereazaTest4.Designer.cs">
       <DependentUpon>GenereazaTest4.cs</DependentUpon>
     </Compile>
-    <Compile Include="GenereazaTest5.cs">
+    <Compile Include="UI\GenereazaTest5.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GenereazaTest5.Designer.cs">
+    <Compile Include="UI\GenereazaTest5.Designer.cs">
       <DependentUpon>GenereazaTest5.cs</DependentUpon>
     </Compile>
-    <Compile Include="GenereazaTeste.cs">
+    <Compile Include="UI\GenereazaTeste.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GenereazaTeste.Designer.cs">
+    <Compile Include="UI\GenereazaTeste.Designer.cs">
       <DependentUpon>GenereazaTeste.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201604091534571_RaspunsModificare.cs" />
@@ -141,40 +141,40 @@
     <Compile Include="Migrations\201605060930021_IntrebareAddCampImagineIntrebare.Designer.cs">
       <DependentUpon>201605060930021_IntrebareAddCampImagineIntrebare.cs</DependentUpon>
     </Compile>
-    <Compile Include="StartPage.cs">
+    <Compile Include="UI\StartPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StartPage.Designer.cs">
+    <Compile Include="UI\StartPage.Designer.cs">
       <DependentUpon>StartPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="TestAles4.cs">
+    <Compile Include="UI\TestAles4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TestAles4.Designer.cs">
+    <Compile Include="UI\TestAles4.Designer.cs">
       <DependentUpon>TestAles4.cs</DependentUpon>
     </Compile>
-    <Compile Include="Teste.cs">
+    <Compile Include="UI\Teste.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Teste.Designer.cs">
+    <Compile Include="UI\Teste.Designer.cs">
       <DependentUpon>Teste.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pacienti.cs">
+    <Compile Include="UI\Pacienti.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pacienti.Designer.cs">
+    <Compile Include="UI\Pacienti.Designer.cs">
       <DependentUpon>Pacienti.cs</DependentUpon>
     </Compile>
-    <Compile Include="Rezultate.cs">
+    <Compile Include="UI\Rezultate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Rezultate.Designer.cs">
+    <Compile Include="UI\Rezultate.Designer.cs">
       <DependentUpon>Rezultate.cs</DependentUpon>
     </Compile>
-    <Compile Include="GenereazaTest1.cs">
+    <Compile Include="UI\GenereazaTest1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GenereazaTest1.Designer.cs">
+    <Compile Include="UI\GenereazaTest1.Designer.cs">
       <DependentUpon>GenereazaTest1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201603271433320_Initial.cs" />
@@ -201,28 +201,28 @@
     <Compile Include="Models\Test.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestAles1.cs">
+    <Compile Include="UI\TestAles1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TestAles1.Designer.cs">
+    <Compile Include="UI\TestAles1.Designer.cs">
       <DependentUpon>TestAles1.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="TestAles5.resx">
+    <EmbeddedResource Include="UI\TestAles5.resx">
       <DependentUpon>TestAles5.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GenereazaTest2.resx">
+    <EmbeddedResource Include="UI\GenereazaTest2.resx">
       <DependentUpon>GenereazaTest2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GenereazaTest3.resx">
+    <EmbeddedResource Include="UI\GenereazaTest3.resx">
       <DependentUpon>GenereazaTest3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GenereazaTest4.resx">
+    <EmbeddedResource Include="UI\GenereazaTest4.resx">
       <DependentUpon>GenereazaTest4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GenereazaTest5.resx">
+    <EmbeddedResource Include="UI\GenereazaTest5.resx">
       <DependentUpon>GenereazaTest5.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GenereazaTeste.resx">
+    <EmbeddedResource Include="UI\GenereazaTeste.resx">
       <DependentUpon>GenereazaTeste.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604091534571_RaspunsModificare.resx">
@@ -258,22 +258,22 @@
     <EmbeddedResource Include="Migrations\201605060930021_IntrebareAddCampImagineIntrebare.resx">
       <DependentUpon>201605060930021_IntrebareAddCampImagineIntrebare.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StartPage.resx">
+    <EmbeddedResource Include="UI\StartPage.resx">
       <DependentUpon>StartPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TestAles4.resx">
+    <EmbeddedResource Include="UI\TestAles4.resx">
       <DependentUpon>TestAles4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Teste.resx">
+    <EmbeddedResource Include="UI\Teste.resx">
       <DependentUpon>Teste.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pacienti.resx">
+    <EmbeddedResource Include="UI\Pacienti.resx">
       <DependentUpon>Pacienti.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Rezultate.resx">
+    <EmbeddedResource Include="UI\Rezultate.resx">
       <DependentUpon>Rezultate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GenereazaTest1.resx">
+    <EmbeddedResource Include="UI\GenereazaTest1.resx">
       <DependentUpon>GenereazaTest1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201603271433320_Initial.resx">
@@ -293,7 +293,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="TestAles1.resx">
+    <EmbeddedResource Include="UI\TestAles1.resx">
       <DependentUpon>TestAles1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -413,9 +413,7 @@
   <ItemGroup>
     <None Include="Resources\kacki.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UI\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\Alex64-Fond-Ecran-Bureau-1024x768pix_19.png" />
   </ItemGroup>

@@ -155,3 +155,42 @@ C:\Users\Robert\Desktop\Recuperare Afazie\WindowsFormsApplication1\obj\Debug\Rec
 D:\Projects\Recuperare Afazie\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
 D:\Projects\Recuperare Afazie\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 D:\Projects\Recuperare Afazie\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\bin\Debug\EntityFramework.dll
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\bin\Debug\EntityFramework.xml
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Migrations.RaspunsModificare.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Migrations.AltaModificareRaspuns.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Migrations.TestAdaugareNrIntrebari.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Migrations.TesteStergeNrIntrebari.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Migrations.RezultateSeparareTimpSiData.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Migrations.RezultateTimeToString.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Migrations.RezultateTimeRequired.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Migrations.IntrebareAddNumarIntrebare.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Migrations.IntrebareStergeNrIntrebare.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Migrations.RaspunsAddNumarIntrebare.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Migrations.IntrebareAddCampImagineIntrebare.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Migrations.Initial.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Migrations.PacientiVarstaOptionalCnpNumePrenumeRequired.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Migrations.TestDinTipInNivel.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Migrations.RezultateSiRaspunsuriAdaugare.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\Recuperare Afazie.csproj.GenerateResource.Cache
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.UI.TestAles5.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.UI.GenereazaTest2.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.UI.GenereazaTest3.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.UI.GenereazaTest4.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.UI.GenereazaTest5.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.UI.GenereazaTeste.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.UI.StartPage.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.UI.TestAles4.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.UI.Teste.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.UI.Pacienti.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.UI.Rezultate.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.UI.GenereazaTest1.resources
+C:\Users\Robert\Desktop\RecuperareAfazie-master\RecuperareAfazie-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.UI.TestAles1.resources
