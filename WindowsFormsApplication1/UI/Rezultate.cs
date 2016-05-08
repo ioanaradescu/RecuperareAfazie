@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
 using WindowsFormsApplication1.DAL;
+using WindowsFormsApplication1.Models;
 
 namespace WindowsFormsApplication1.UI
 {
@@ -19,6 +21,7 @@ namespace WindowsFormsApplication1.UI
         int idTest = 0;
         int nrTeste = 0;
 
+        private List<Rezultat> rezultate;
 
         public Rezultate()
         {
@@ -85,96 +88,70 @@ namespace WindowsFormsApplication1.UI
             {
                 MessageBox.Show("Selectati numele pacientului");
             }
-            else
-                if (prenComboBox.Text == "")
+            else if (prenComboBox.Text == "")
             {
                 MessageBox.Show("Selectati prenumele pacientului");
             }
-
-            else
-                if (nivelTestComboBox.Text == "")
-            {
-                MessageBox.Show("Selectati nivelul testului");
-            }
-            else
-
-                if (numeTestComboBox.Text == "")
-            {
-                MessageBox.Show("Selectati numele testului");
-            }
+            
             else
             {
-
-                bool nivelParsat = int.TryParse(nivelTestComboBox.Text, out nivel);
-                if (nivelParsat == true)
+                var rezultateQuery = dbContext.Rezultate.Where(x => x.Pacient.Nume == numeComboBox.Text && x.Pacient.Prenume == prenComboBox.Text);
+                if (!string.IsNullOrWhiteSpace(nivelTestComboBox.Text))
                 {
-                    nivel = int.Parse(nivelTestComboBox.Text);
+                    bool nivelParsat = int.TryParse(nivelTestComboBox.Text, out nivel);
+                    if (nivelParsat == true)
+                    {
+                        nivel = int.Parse(nivelTestComboBox.Text);
+                        rezultateQuery = rezultateQuery.Where(x => x.Test.Nivel == nivel);
+                    }
                 }
+                if (!string.IsNullOrWhiteSpace(numeTestComboBox.Text))
+                {
+                    rezultateQuery = rezultateQuery.Where(x => x.Test.Nume == numeTestComboBox.Text);
+                }
+                if (dataRezolvareCheckBox.Checked)
+                {
+                    rezultateQuery = rezultateQuery.Where(x => x.DataRezolvare == dataRezolvareDatePicker.Value.Date);
+                }
+                rezultate = rezultateQuery.ToList();
 
-                var rezultate = (from rez in dbContext.Rezultate
-                                 join p in dbContext.Pacienti on rez.PacientId equals p.Id
-                                 join t in dbContext.Teste on rez.TestId equals t.TestId
-                                 where (p.Nume == numeComboBox.Text && p.Prenume == prenComboBox.Text && t.Nivel == nivel && t.Nume == numeTestComboBox.Text)
-                                 orderby t.TestId
-                                 select new
-                                 {
-                                     Nume_Pacient = p.Nume,
-                                     Prenume_Pacient = p.Prenume,
-                                     Nume_Test = t.Nume,
-                                     Nivel_Test = t.Nivel,
-                                     Raspunsuri_Corecte = rez.RaspunsuriCorecte,
-                                     Raspunsuri_Gresite = rez.RaspunsuriGresite,
-                                     Timp_Rezolvare = rez.TimpRezolvare,
-                                     Data_Rezolvare = rez.DataRezolvare,
-
-                                 }).ToList();
-
-                var rezultateId = (from rez in dbContext.Rezultate
-                                   join p in dbContext.Pacienti on rez.PacientId equals p.Id
-                                   join t in dbContext.Teste on rez.TestId equals t.TestId
-                                   where (p.Nume == numeComboBox.Text && p.Prenume == prenComboBox.Text && t.Nivel == nivel && t.Nume == numeTestComboBox.Text)
-                                   orderby t.TestId
-                                   select new
-                                   {
-                                       p.Id,
-                                       t.TestId,
-
-                                   }).ToList();
+                var rezultateAfisate = rezultate.Select(x => 
+                    new
+                    {
+                        Nume_Pacient = x.Pacient.Nume,
+                        Prenume_Pacient = x.Pacient.Prenume,
+                        Nume_Test = x.Test.Nume,
+                        Nivel_Test = x.Test.Nivel,
+                        Raspunsuri_Corecte = x.RaspunsuriCorecte, // de scos proprietati 'RaspunsuriCorecte' si 'RaspunsuriGresite' si de adaugat bool 'EsteCorect' pe entitatea 'Raspuns'
+                        Raspunsuri_Gresite = x.RaspunsuriGresite,
+                        Timp_Rezolvare = x.TimpRezolvare,
+                        Data_Rezolvare = x.DataRezolvare
+                    }).ToList();
 
                 numePacient = numeComboBox.Text;
                 prenumePacient = prenComboBox.Text;
                 numeTest = numeTestComboBox.Text;
 
-                int i = 0;
-                foreach (var x in rezultateId)
-                {
-                    idPacient = x.Id;
-                    idTest = x.TestId;
-                    i++;
-                    nrTeste++;
-                }
+                nrTeste = rezultate.Count();
 
-                RezultateGridView.DataSource = rezultate;
+                RezultateGridView.DataSource = rezultateAfisate;
+
                 numeTestComboBox.Text = "";
             }
         }
 
         private void veziRaspButton_Click(object sender, EventArgs e)
         {
+            var raspunsuriAfisate = rezultate.SelectMany(x => x.Raspunsuri)
+                .Select(x =>
+                    new
+                    {
+                        Numar_Intrebare = x.NumarIntrebare,
+                        Raspuns_Corect = x.RaspunsCorect,
+                        Raspuns_Primit = x.RaspunsDat,
+                    }).ToList();
 
-            var raspunsuri = (from rasp in dbContext.Raspunsuri
-                              join r in dbContext.Rezultate on rasp.RezultatId equals r.RezultatId
-                              where r.TestId == idTest && r.PacientId == idPacient
-                              select new
-                              {
-                                  Numar_Intrebare = rasp.NumarIntrebare,
-                                  Raspuns_Corect = rasp.RaspunsCorect,
-                                  Raspuns_Primit = rasp.RaspunsDat,
-
-                              }).ToList();
-
-            raspunsuriDataGridView.DataSource = raspunsuri;
-
+            raspunsuriDataGridView.DataSource = raspunsuriAfisate;
         }
 
         public void VeziRaspunsuriCompleteOrdonate(Button btn)
@@ -357,6 +334,14 @@ namespace WindowsFormsApplication1.UI
         {
 
         }
-      
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void dataRezolvareCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            dataRezolvareDatePicker.Visible = dataRezolvareCheckBox.Checked;
+        }
     }
 }
