@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{36379FBE-C5D7-4AFE-BEB5-AE7F461C4E11}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data Access Layer\Configurations\IntrebareConfiguration.cs" />
+    <Compile Include="Data Access Layer\Configurations\PacientConfiguration.cs" />
+    <Compile Include="Data Access Layer\Configurations\RaspunsConfiguration.cs" />
+    <Compile Include="Data Access Layer\Configurations\RezultatConfiguration.cs" />
+    <Compile Include="Data Access Layer\Configurations\TestConfiguration.cs" />
+    <Compile Include="Data Access Layer\RecuperareAfazieContext.cs" />
+    <Compile Include="TestAles5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestAles5.Designer.cs">
+      <DependentUpon>TestAles5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenereazaTest2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenereazaTest2.Designer.cs">
+      <DependentUpon>GenereazaTest2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenereazaTest3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenereazaTest3.Designer.cs">
+      <DependentUpon>GenereazaTest3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenereazaTest4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenereazaTest4.Designer.cs">
+      <DependentUpon>GenereazaTest4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenereazaTest5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenereazaTest5.Designer.cs">
+      <DependentUpon>GenereazaTest5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenereazaTeste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenereazaTeste.Designer.cs">
+      <DependentUpon>GenereazaTeste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604091534571_RaspunsModificare.cs" />
+    <Compile Include="Migrations\201604091534571_RaspunsModificare.Designer.cs">
+      <DependentUpon>201604091534571_RaspunsModificare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604091549538_AltaModificareRaspuns.cs" />
+    <Compile Include="Migrations\201604091549538_AltaModificareRaspuns.Designer.cs">
+      <DependentUpon>201604091549538_AltaModificareRaspuns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604091621497_TestAdaugareNrIntrebari.cs" />
+    <Compile Include="Migrations\201604091621497_TestAdaugareNrIntrebari.Designer.cs">
+      <DependentUpon>201604091621497_TestAdaugareNrIntrebari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604091700576_TesteStergeNrIntrebari.cs" />
+    <Compile Include="Migrations\201604091700576_TesteStergeNrIntrebari.Designer.cs">
+      <DependentUpon>201604091700576_TesteStergeNrIntrebari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604251745342_RezultateSeparareTimpSiData.cs" />
+    <Compile Include="Migrations\201604251745342_RezultateSeparareTimpSiData.Designer.cs">
+      <DependentUpon>201604251745342_RezultateSeparareTimpSiData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604261527347_RezultateTimeToString.cs" />
+    <Compile Include="Migrations\201604261527347_RezultateTimeToString.Designer.cs">
+      <DependentUpon>201604261527347_RezultateTimeToString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604261540119_RezultateTimeRequired.cs" />
+    <Compile Include="Migrations\201604261540119_RezultateTimeRequired.Designer.cs">
+      <DependentUpon>201604261540119_RezultateTimeRequired.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604270930579_IntrebareAddNumarIntrebare.cs" />
+    <Compile Include="Migrations\201604270930579_IntrebareAddNumarIntrebare.Designer.cs">
+      <DependentUpon>201604270930579_IntrebareAddNumarIntrebare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604281823121_IntrebareStergeNrIntrebare.cs" />
+    <Compile Include="Migrations\201604281823121_IntrebareStergeNrIntrebare.Designer.cs">
+      <DependentUpon>201604281823121_IntrebareStergeNrIntrebare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604281827347_RaspunsAddNumarIntrebare.cs" />
+    <Compile Include="Migrations\201604281827347_RaspunsAddNumarIntrebare.Designer.cs">
+      <DependentUpon>201604281827347_RaspunsAddNumarIntrebare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605060930021_IntrebareAddCampImagineIntrebare.cs" />
+    <Compile Include="Migrations\201605060930021_IntrebareAddCampImagineIntrebare.Designer.cs">
+      <DependentUpon>201605060930021_IntrebareAddCampImagineIntrebare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartPage.Designer.cs">
+      <DependentUpon>StartPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestAles4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestAles4.Designer.cs">
+      <DependentUpon>TestAles4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teste.Designer.cs">
+      <DependentUpon>Teste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pacienti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pacienti.Designer.cs">
+      <DependentUpon>Pacienti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rezultate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rezultate.Designer.cs">
+      <DependentUpon>Rezultate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenereazaTest1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenereazaTest1.Designer.cs">
+      <DependentUpon>GenereazaTest1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603271433320_Initial.cs" />
+    <Compile Include="Migrations\201603271433320_Initial.Designer.cs">
+      <DependentUpon>201603271433320_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603271512292_PacientiVarstaOptionalCnpNumePrenumeRequired.cs" />
+    <Compile Include="Migrations\201603271512292_PacientiVarstaOptionalCnpNumePrenumeRequired.Designer.cs">
+      <DependentUpon>201603271512292_PacientiVarstaOptionalCnpNumePrenumeRequired.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604031624484_TestDinTipInNivel.cs" />
+    <Compile Include="Migrations\201604031624484_TestDinTipInNivel.Designer.cs">
+      <DependentUpon>201604031624484_TestDinTipInNivel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604051630544_RezultateSiRaspunsuriAdaugare.cs" />
+    <Compile Include="Migrations\201604051630544_RezultateSiRaspunsuriAdaugare.Designer.cs">
+      <DependentUpon>201604051630544_RezultateSiRaspunsuriAdaugare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Intrebare.cs" />
+    <Compile Include="Models\Pacient.cs" />
+    <Compile Include="Models\Raspuns.cs" />
+    <Compile Include="Models\Rezultat.cs" />
+    <Compile Include="Models\Test.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestAles1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestAles1.Designer.cs">
+      <DependentUpon>TestAles1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TestAles5.resx">
+      <DependentUpon>TestAles5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenereazaTest2.resx">
+      <DependentUpon>GenereazaTest2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenereazaTest3.resx">
+      <DependentUpon>GenereazaTest3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenereazaTest4.resx">
+      <DependentUpon>GenereazaTest4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenereazaTest5.resx">
+      <DependentUpon>GenereazaTest5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenereazaTeste.resx">
+      <DependentUpon>GenereazaTeste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604091534571_RaspunsModificare.resx">
+      <DependentUpon>201604091534571_RaspunsModificare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604091549538_AltaModificareRaspuns.resx">
+      <DependentUpon>201604091549538_AltaModificareRaspuns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604091621497_TestAdaugareNrIntrebari.resx">
+      <DependentUpon>201604091621497_TestAdaugareNrIntrebari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604091700576_TesteStergeNrIntrebari.resx">
+      <DependentUpon>201604091700576_TesteStergeNrIntrebari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604251745342_RezultateSeparareTimpSiData.resx">
+      <DependentUpon>201604251745342_RezultateSeparareTimpSiData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604261527347_RezultateTimeToString.resx">
+      <DependentUpon>201604261527347_RezultateTimeToString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604261540119_RezultateTimeRequired.resx">
+      <DependentUpon>201604261540119_RezultateTimeRequired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604270930579_IntrebareAddNumarIntrebare.resx">
+      <DependentUpon>201604270930579_IntrebareAddNumarIntrebare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604281823121_IntrebareStergeNrIntrebare.resx">
+      <DependentUpon>201604281823121_IntrebareStergeNrIntrebare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604281827347_RaspunsAddNumarIntrebare.resx">
+      <DependentUpon>201604281827347_RaspunsAddNumarIntrebare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605060930021_IntrebareAddCampImagineIntrebare.resx">
+      <DependentUpon>201605060930021_IntrebareAddCampImagineIntrebare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartPage.resx">
+      <DependentUpon>StartPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestAles4.resx">
+      <DependentUpon>TestAles4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teste.resx">
+      <DependentUpon>Teste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pacienti.resx">
+      <DependentUpon>Pacienti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rezultate.resx">
+      <DependentUpon>Rezultate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenereazaTest1.resx">
+      <DependentUpon>GenereazaTest1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603271433320_Initial.resx">
+      <DependentUpon>201603271433320_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603271512292_PacientiVarstaOptionalCnpNumePrenumeRequired.resx">
+      <DependentUpon>201603271512292_PacientiVarstaOptionalCnpNumePrenumeRequired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604031624484_TestDinTipInNivel.resx">
+      <DependentUpon>201604031624484_TestDinTipInNivel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604051630544_RezultateSiRaspunsuriAdaugare.resx">
+      <DependentUpon>201604051630544_RezultateSiRaspunsuriAdaugare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestAles1.resx">
+      <DependentUpon>TestAles1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dislalia-315x133.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slide3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\609003_desen-animat-litere-deschide-carte-vector-şcoală.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\609003_desen-animat-litere-deschide-carte-vector-şcoală %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagABC.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1831944_magic-carte-litere-mână-cer-fundal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A_mare1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bmare.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cmare.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\litm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pijl2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\promotie-medicala-373.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ceas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ceasss2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaa2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowMICA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowMICA2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descărcare1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\litereleqqq.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kacki.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UI\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alex64-Fond-Ecran-Bureau-1024x768pix_19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0200f52f20ccd0b98b70cb62bce16f46.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pink.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagep.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tapet-Parato-Cristiana-Masi-NOBILE-2911.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
