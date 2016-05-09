@@ -173,17 +173,6 @@ namespace WindowsFormsApplication1.UI
             raspGresitLbl.Text = raspunsuriGresite.ToString();
             timpRezLbl.Text = timeLbl.Text;
 
-            //var raspunsuri = (from rasp in dbContext.Raspunsuri
-            //                  join r in dbContext.Rezultate on rasp.RezultatId equals r.RezultatId
-            //                  where r.TestId == id_test && r.PacientId == id_pacient
-            //                  select new
-            //                  {
-            //                      Numar_Intrebare = rasp.NumarIntrebare,
-            //                      Raspuns_Corect = rasp.RaspunsCorect,
-            //                      Raspuns_Primit = rasp.RaspunsDat,
-
-            //                  }).ToList();
-
             var raspunsuri = dbContext.Raspunsuri.Where(x => x.Rezultat.TestId == id_test && x.Rezultat.PacientId == id_pacient && x.Rezultat.RezultatId == id_rezultat)
                 .Select(x =>
                     new
